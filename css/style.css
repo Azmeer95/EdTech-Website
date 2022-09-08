@@ -46,6 +46,13 @@ body {
   color: var(--btnColor);
 }
 
+/* Trusted Section Styling */
+.trusted-h2 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+}
+
 /* Footer Styling */
 .footer-styling {
   background-color: var(--footerColor);
@@ -77,6 +84,11 @@ footer .p2 {
 }
 
 /* Responsive Design */
+@media screen and (min-width: 320px) and (max-width: 1099px) {
+  .trusted-section {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .footer-styling h2 {
