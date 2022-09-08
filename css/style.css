@@ -1,0 +1,102 @@
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Common Styling */
+:root {
+  --navBrandColor: #4a4a4a;
+  --navLinkColor: #777777;
+  --btnColor: #289bde;
+  --footerColor: #161616;
+  --footerHeading: #fff;
+  --footeerText: #e8e8e8;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Section Styling */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--navBrandColor);
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--navLinkColor);
+}
+
+.btn-custom {
+  border: 1px solid var(--btnColor);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--btnColor);
+  padding: 13px 33px;
+}
+
+.btn-custom:hover {
+  background-color: #fff;
+  border: 3px solid var(--btnColor);
+  border-radius: 0;
+  color: var(--btnColor);
+}
+
+/* Footer Styling */
+.footer-styling {
+  background-color: var(--footerColor);
+}
+
+.footer-styling h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--footerHeading);
+}
+
+.footer-styling p {
+  color: var(--footeerText);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+footer .p2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 126%;
+}
+
+.footer-styling a {
+  text-decoration: none;
+  color: var(--footeerText);
+}
+
+/* Responsive Design */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .footer-styling h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer-container {
+    padding: 30px 47px;
+  }
+
+  .footer-styling h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .footer-styling p,
+  footer .p2 {
+    font-size: 14px;
+  }
+}
