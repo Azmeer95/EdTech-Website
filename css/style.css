@@ -6,6 +6,9 @@
   --navBrandColor: #4a4a4a;
   --navLinkColor: #777777;
   --btnColor: #289bde;
+  --sectionHeading: #1d1d1d;
+  --accordionHeading: #4a4a4a;
+  --accordionBtnBg: rgba(40, 155, 222, 0.1);
   --footerColor: #161616;
   --footerHeading: #fff;
   --footeerText: #e8e8e8;
@@ -46,11 +49,57 @@ body {
   color: var(--btnColor);
 }
 
+/* FAQ Section Styling */
+.faq-heading {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+  color: var(--sectionHeading);
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--accordionHeading);
+  background: var(--accordionBtnBg);
+  border-radius: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--accordionHeading);
+  background-color: var(--accordionBtnBg);
+}
+
+.collapsed {
+  border: 1px solid var(--footeerText);
+  background-color: var(--footerHeading);
+}
+
+.accordion-body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--navLinkColor);
+}
+
+.faq-para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--navLinkColor);
+}
+
 /* Trusted Section Styling */
 .trusted-h2 {
   font-weight: 600;
   font-size: 45px;
   line-height: 60px;
+  color: var(--sectionHeading);
 }
 
 /* Footer Styling */
@@ -97,7 +146,16 @@ footer .p2 {
   }
 }
 
+/* @media (min-width: 320px) and (max-width: 576px) {
+} */
+
 @media (min-width: 320px) and (max-width: 480px) {
+  /* FAQ Section Styling */
+  .bg-screen {
+    display: none;
+  }
+
+  /* Footer Styling */
   .footer-container {
     padding: 30px 47px;
   }
